@@ -4,7 +4,7 @@
 
 iSeq (or its GPU implementation, `igpu`) automatically extracts 'neural sequences,' which are patterns of neuronal population activity with specific temporal order relationships, from raster data with neuron × time dimensions. This program is specifically tuned for analyzing data obtained using calcium imaging techniques.
 
-For details on the methodology and examples of its applications, please refer to the preprint [](https://doi.org/10.1101/2025.01.16.633469).
+For details on the methodology and examples of its applications, please refer to the [preprint](https://doi.org/10.1101/2025.01.16.633469).
 
 ## System requirements
 
@@ -63,17 +63,17 @@ model = igpu.solve(x, k=20, l=50, z_th=x.min(), random_seed=0, corr_max=0.3, com
 
 The options that can be specified in `igpu.solve` are as follows:
 
- - V (required): The matrix to be decomposed.
- - k (required): The maximum number of neural sequences to detect.
- - l (required): The maximum duration of the neural sequences.
- - z_th: Minimum threshold (values below this are considered zero, default=`0.001`).
- - tolerance: The tolerance for computation (default=`1e-7`).
- - n_iter: The number of computation iterations per phase ([searching for high intensity columns, decomposing the high intensity matrix, adjustment after determining the number of neural sequences, final decomposition], default=`[30, 30, 10, 30]`).
- - comp_rate: The compression ratio when reducing the matrix V (default=`0.3`).
- - Wlim: The maximum value for matrix W (default=`0.1`).
- - Hlim: The maximum value for matrix H (default=`1.0`).
- - corr_max: The correlation threshold for considering two neural sequences as identical (default=`0.95`).
- - random_seed: The seed value for random number generation (default=`None`).
+ - `V` (required): The matrix to be decomposed.
+ - `k` (required): The maximum number of neural sequences to detect.
+ - `l` (required): The maximum duration of the neural sequences.
+ - `z_th`: Minimum threshold (values below this are considered zero, default=`0.001`).
+ - `tolerance`: The tolerance for computation (default=`1e-7`).
+ - `n_iter`: The number of computation iterations per phase ([searching for high intensity columns, decomposing the high intensity matrix, adjustment after determining the number of neural sequences, final decomposition], default=`[30, 30, 10, 30]`).
+ - `comp_rate`: The compression ratio when reducing the matrix V (default=`0.3`).
+ - `Wlim`: The maximum value for matrix W (default=`0.1`).
+ - `Hlim`: The maximum value for matrix H (default=`1.0`).
+ - `corr_max`: The correlation threshold for considering two neural sequences as identical (default=`0.95`).
+ - `random_seed`: The seed value for random number generation (default=`None`).
 
 For details on each parameter, please refer to the paper.
 
