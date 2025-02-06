@@ -53,7 +53,7 @@ This demo should run within a few minutes on a typical desktop computer.
 
 First, refer to the demo (`How_to_use_iqpu.ipynb`).
 
-Suppose your data matrix, `x`, is loaded, where each row records the temporal changes in activity for each neuron. Running the following code will initiate matrix decomposition, and the results will be stored in model. The shapes of the detected neural sequences are stored in model.W, while the temporal changes in their activity intensities are stored in model.H. 
+Suppose your data matrix, `x`, is loaded, where each row records the temporal changes in activity for each neuron. Running the following code will initiate matrix decomposition, and the results will be stored in model. The shapes of the detected neural sequences are stored in `model.W`, while the temporal changes in their activity intensities are stored in `model.H`. 
 
 ```python
 import igpu
