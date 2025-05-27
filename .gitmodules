@@ -1,0 +1,3 @@
+[submodule "seqNMF"]
+	path = seqNMF
+	url = https://github.com/IdlingBrainUT/seqNMF
